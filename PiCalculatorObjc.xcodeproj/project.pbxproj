@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4BC670E7F09CB37D6AFA065 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DBCD6D4AC8097F22A671F1 /* libPods.a */; };
+		F5EF8A961BF0A0B50005D5B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8A951BF0A0B50005D5B2 /* main.m */; };
+		F5EF8A991BF0A0B50005D5B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8A981BF0A0B50005D5B2 /* AppDelegate.m */; };
+		F5EF8A9C1BF0A0B50005D5B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8A9B1BF0A0B50005D5B2 /* ViewController.m */; };
+		F5EF8AA21BF0A0B50005D5B2 /* PiCalculatorObjc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8AA01BF0A0B50005D5B2 /* PiCalculatorObjc.xcdatamodeld */; };
+		F5EF8AA41BF0A0B50005D5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EF8AA31BF0A0B50005D5B2 /* Assets.xcassets */; };
+		F5EF8AA71BF0A0B50005D5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EF8AA51BF0A0B50005D5B2 /* LaunchScreen.storyboard */; };
+		F5EF8AB21BF0A0B60005D5B2 /* PiCalculatorObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8AB11BF0A0B60005D5B2 /* PiCalculatorObjcTests.m */; };
+		F5EF8ABD1BF0A0B60005D5B2 /* PiCalculatorObjcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8ABC1BF0A0B60005D5B2 /* PiCalculatorObjcUITests.m */; };
+		F5EF8AD31BF0A7880005D5B2 /* PiCalculatorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8AD21BF0A7880005D5B2 /* PiCalculatorViewModel.m */; };
+		F5EF8ADA1BF0B4BA0005D5B2 /* PiCalculateService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8AD91BF0B4BA0005D5B2 /* PiCalculateService.m */; };
+		F5EF8ADD1BF0B4D40005D5B2 /* ElapsedTimerService.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8ADC1BF0B4D40005D5B2 /* ElapsedTimerService.m */; };
+		F5EF8AE01BF0B8F60005D5B2 /* PiCalculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8ADF1BF0B8F60005D5B2 /* PiCalculatorModel.m */; };
+		F5FF2A4C1BF152B7000F57CC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5FF2A4B1BF152B7000F57CC /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5EF8AAE1BF0A0B60005D5B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EF8A891BF0A0B50005D5B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5EF8A901BF0A0B50005D5B2;
+			remoteInfo = PiCalculatorObjc;
+		};
+		F5EF8AB91BF0A0B60005D5B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EF8A891BF0A0B50005D5B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5EF8A901BF0A0B50005D5B2;
+			remoteInfo = PiCalculatorObjc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70DBCD6D4AC8097F22A671F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE36A5D015D01C999B16605 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F5422C280F9347AD52FB9D66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F5EF8A911BF0A0B50005D5B2 /* PiCalculatorObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiCalculatorObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EF8A951BF0A0B50005D5B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5EF8A971BF0A0B50005D5B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5EF8A981BF0A0B50005D5B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5EF8A9A1BF0A0B50005D5B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5EF8A9B1BF0A0B50005D5B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5EF8AA11BF0A0B50005D5B2 /* PiCalculatorObjc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PiCalculatorObjc.xcdatamodel; sourceTree = "<group>"; };
+		F5EF8AA31BF0A0B50005D5B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5EF8AA61BF0A0B50005D5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5EF8AA81BF0A0B50005D5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EF8AAD1BF0A0B60005D5B2 /* PiCalculatorObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiCalculatorObjcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EF8AB11BF0A0B60005D5B2 /* PiCalculatorObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PiCalculatorObjcTests.m; sourceTree = "<group>"; };
+		F5EF8AB31BF0A0B60005D5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EF8AB81BF0A0B60005D5B2 /* PiCalculatorObjcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiCalculatorObjcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EF8ABC1BF0A0B60005D5B2 /* PiCalculatorObjcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PiCalculatorObjcUITests.m; sourceTree = "<group>"; };
+		F5EF8ABE1BF0A0B60005D5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EF8AD11BF0A7880005D5B2 /* PiCalculatorViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PiCalculatorViewModel.h; sourceTree = "<group>"; };
+		F5EF8AD21BF0A7880005D5B2 /* PiCalculatorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PiCalculatorViewModel.m; sourceTree = "<group>"; };
+		F5EF8AD81BF0B4BA0005D5B2 /* PiCalculateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PiCalculateService.h; sourceTree = "<group>"; };
+		F5EF8AD91BF0B4BA0005D5B2 /* PiCalculateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PiCalculateService.m; sourceTree = "<group>"; };
+		F5EF8ADB1BF0B4D40005D5B2 /* ElapsedTimerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElapsedTimerService.h; sourceTree = "<group>"; };
+		F5EF8ADC1BF0B4D40005D5B2 /* ElapsedTimerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElapsedTimerService.m; sourceTree = "<group>"; };
+		F5EF8ADE1BF0B8F60005D5B2 /* PiCalculatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PiCalculatorModel.h; sourceTree = "<group>"; };
+		F5EF8ADF1BF0B8F60005D5B2 /* PiCalculatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PiCalculatorModel.m; sourceTree = "<group>"; };
+		F5FF2A4B1BF152B7000F57CC /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5EF8A8E1BF0A0B50005D5B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BC670E7F09CB37D6AFA065 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EF8AAA1BF0A0B60005D5B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EF8AB51BF0A0B60005D5B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A8657E0896527D902F7F4A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDE36A5D015D01C999B16605 /* Pods.debug.xcconfig */,
+				F5422C280F9347AD52FB9D66 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFFF963C2B17D1278115245B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70DBCD6D4AC8097F22A671F1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5EF8A881BF0A0B50005D5B2 = {
+			isa = PBXGroup;
+			children = (
+				F5EF8A931BF0A0B50005D5B2 /* PiCalculatorObjc */,
+				F5EF8AB01BF0A0B60005D5B2 /* PiCalculatorObjcTests */,
+				F5EF8ABB1BF0A0B60005D5B2 /* PiCalculatorObjcUITests */,
+				F5EF8A921BF0A0B50005D5B2 /* Products */,
+				5A8657E0896527D902F7F4A7 /* Pods */,
+				EFFF963C2B17D1278115245B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5EF8A921BF0A0B50005D5B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF8A911BF0A0B50005D5B2 /* PiCalculatorObjc.app */,
+				F5EF8AAD1BF0A0B60005D5B2 /* PiCalculatorObjcTests.xctest */,
+				F5EF8AB81BF0A0B60005D5B2 /* PiCalculatorObjcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5EF8A931BF0A0B50005D5B2 /* PiCalculatorObjc */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF8ACD1BF0A3480005D5B2 /* Model */,
+				F5EF8ACC1BF0A3400005D5B2 /* ViewModel */,
+				F5EF8ACB1BF0A32B0005D5B2 /* View */,
+				F5EF8ACA1BF0A31D0005D5B2 /* Common */,
+				F5EF8A971BF0A0B50005D5B2 /* AppDelegate.h */,
+				F5EF8A981BF0A0B50005D5B2 /* AppDelegate.m */,
+				F5EF8AA31BF0A0B50005D5B2 /* Assets.xcassets */,
+				F5EF8AA51BF0A0B50005D5B2 /* LaunchScreen.storyboard */,
+				F5EF8AA81BF0A0B50005D5B2 /* Info.plist */,
+				F5EF8AA01BF0A0B50005D5B2 /* PiCalculatorObjc.xcdatamodeld */,
+				F5EF8A941BF0A0B50005D5B2 /* Supporting Files */,
+			);
+			path = PiCalculatorObjc;
+			sourceTree = "<group>";
+		};
+		F5EF8A941BF0A0B50005D5B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF8A951BF0A0B50005D5B2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5EF8AB01BF0A0B60005D5B2 /* PiCalculatorObjcTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF8AB11BF0A0B60005D5B2 /* PiCalculatorObjcTests.m */,
+				F5EF8AB31BF0A0B60005D5B2 /* Info.plist */,
+			);
+			path = PiCalculatorObjcTests;
+			sourceTree = "<group>";
+		};
+		F5EF8ABB1BF0A0B60005D5B2 /* PiCalculatorObjcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF8ABC1BF0A0B60005D5B2 /* PiCalculatorObjcUITests.m */,
+				F5EF8ABE1BF0A0B60005D5B2 /* Info.plist */,
+			);
+			path = PiCalculatorObjcUITests;
+			sourceTree = "<group>";
+		};
+		F5EF8ACA1BF0A31D0005D5B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F5EF8ACB1BF0A32B0005D5B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF8A9A1BF0A0B50005D5B2 /* ViewController.h */,
+				F5EF8A9B1BF0A0B50005D5B2 /* ViewController.m */,
+				F5FF2A4B1BF152B7000F57CC /* ViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F5EF8ACC1BF0A3400005D5B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF8AD11BF0A7880005D5B2 /* PiCalculatorViewModel.h */,
+				F5EF8AD21BF0A7880005D5B2 /* PiCalculatorViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5EF8ACD1BF0A3480005D5B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF8AD81BF0B4BA0005D5B2 /* PiCalculateService.h */,
+				F5EF8AD91BF0B4BA0005D5B2 /* PiCalculateService.m */,
+				F5EF8ADB1BF0B4D40005D5B2 /* ElapsedTimerService.h */,
+				F5EF8ADC1BF0B4D40005D5B2 /* ElapsedTimerService.m */,
+				F5EF8ADE1BF0B8F60005D5B2 /* PiCalculatorModel.h */,
+				F5EF8ADF1BF0B8F60005D5B2 /* PiCalculatorModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5EF8A901BF0A0B50005D5B2 /* PiCalculatorObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EF8AC11BF0A0B60005D5B2 /* Build configuration list for PBXNativeTarget "PiCalculatorObjc" */;
+			buildPhases = (
+				E64575D19655DFFE93851384 /* Check Pods Manifest.lock */,
+				F5EF8A8D1BF0A0B50005D5B2 /* Sources */,
+				F5EF8A8E1BF0A0B50005D5B2 /* Frameworks */,
+				F5EF8A8F1BF0A0B50005D5B2 /* Resources */,
+				88858F09FCD7F54B3B9F3FA2 /* Embed Pods Frameworks */,
+				709E35C65ED265A47447C3AD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PiCalculatorObjc;
+			productName = PiCalculatorObjc;
+			productReference = F5EF8A911BF0A0B50005D5B2 /* PiCalculatorObjc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5EF8AAC1BF0A0B60005D5B2 /* PiCalculatorObjcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EF8AC41BF0A0B60005D5B2 /* Build configuration list for PBXNativeTarget "PiCalculatorObjcTests" */;
+			buildPhases = (
+				F5EF8AA91BF0A0B60005D5B2 /* Sources */,
+				F5EF8AAA1BF0A0B60005D5B2 /* Frameworks */,
+				F5EF8AAB1BF0A0B60005D5B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5EF8AAF1BF0A0B60005D5B2 /* PBXTargetDependency */,
+			);
+			name = PiCalculatorObjcTests;
+			productName = PiCalculatorObjcTests;
+			productReference = F5EF8AAD1BF0A0B60005D5B2 /* PiCalculatorObjcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5EF8AB71BF0A0B60005D5B2 /* PiCalculatorObjcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EF8AC71BF0A0B60005D5B2 /* Build configuration list for PBXNativeTarget "PiCalculatorObjcUITests" */;
+			buildPhases = (
+				F5EF8AB41BF0A0B60005D5B2 /* Sources */,
+				F5EF8AB51BF0A0B60005D5B2 /* Frameworks */,
+				F5EF8AB61BF0A0B60005D5B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5EF8ABA1BF0A0B60005D5B2 /* PBXTargetDependency */,
+			);
+			name = PiCalculatorObjcUITests;
+			productName = PiCalculatorObjcUITests;
+			productReference = F5EF8AB81BF0A0B60005D5B2 /* PiCalculatorObjcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5EF8A891BF0A0B50005D5B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Eric;
+				TargetAttributes = {
+					F5EF8A901BF0A0B50005D5B2 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					F5EF8AAC1BF0A0B60005D5B2 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F5EF8A901BF0A0B50005D5B2;
+					};
+					F5EF8AB71BF0A0B60005D5B2 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F5EF8A901BF0A0B50005D5B2;
+					};
+				};
+			};
+			buildConfigurationList = F5EF8A8C1BF0A0B50005D5B2 /* Build configuration list for PBXProject "PiCalculatorObjc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5EF8A881BF0A0B50005D5B2;
+			productRefGroup = F5EF8A921BF0A0B50005D5B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5EF8A901BF0A0B50005D5B2 /* PiCalculatorObjc */,
+				F5EF8AAC1BF0A0B60005D5B2 /* PiCalculatorObjcTests */,
+				F5EF8AB71BF0A0B60005D5B2 /* PiCalculatorObjcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5EF8A8F1BF0A0B50005D5B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EF8AA71BF0A0B50005D5B2 /* LaunchScreen.storyboard in Resources */,
+				F5EF8AA41BF0A0B50005D5B2 /* Assets.xcassets in Resources */,
+				F5FF2A4C1BF152B7000F57CC /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EF8AAB1BF0A0B60005D5B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EF8AB61BF0A0B60005D5B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		709E35C65ED265A47447C3AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88858F09FCD7F54B3B9F3FA2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E64575D19655DFFE93851384 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5EF8A8D1BF0A0B50005D5B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EF8A9C1BF0A0B50005D5B2 /* ViewController.m in Sources */,
+				F5EF8A991BF0A0B50005D5B2 /* AppDelegate.m in Sources */,
+				F5EF8AE01BF0B8F60005D5B2 /* PiCalculatorModel.m in Sources */,
+				F5EF8AA21BF0A0B50005D5B2 /* PiCalculatorObjc.xcdatamodeld in Sources */,
+				F5EF8AD31BF0A7880005D5B2 /* PiCalculatorViewModel.m in Sources */,
+				F5EF8A961BF0A0B50005D5B2 /* main.m in Sources */,
+				F5EF8ADD1BF0B4D40005D5B2 /* ElapsedTimerService.m in Sources */,
+				F5EF8ADA1BF0B4BA0005D5B2 /* PiCalculateService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EF8AA91BF0A0B60005D5B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EF8AB21BF0A0B60005D5B2 /* PiCalculatorObjcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EF8AB41BF0A0B60005D5B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EF8ABD1BF0A0B60005D5B2 /* PiCalculatorObjcUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5EF8AAF1BF0A0B60005D5B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5EF8A901BF0A0B50005D5B2 /* PiCalculatorObjc */;
+			targetProxy = F5EF8AAE1BF0A0B60005D5B2 /* PBXContainerItemProxy */;
+		};
+		F5EF8ABA1BF0A0B60005D5B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5EF8A901BF0A0B50005D5B2 /* PiCalculatorObjc */;
+			targetProxy = F5EF8AB91BF0A0B60005D5B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5EF8AA51BF0A0B50005D5B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5EF8AA61BF0A0B50005D5B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5EF8ABF1BF0A0B60005D5B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5EF8AC01BF0A0B60005D5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5EF8AC21BF0A0B60005D5B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDE36A5D015D01C999B16605 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PiCalculatorObjc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5EF8AC31BF0A0B60005D5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5422C280F9347AD52FB9D66 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PiCalculatorObjc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5EF8AC51BF0A0B60005D5B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PiCalculatorObjcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiCalculatorObjc.app/PiCalculatorObjc";
+			};
+			name = Debug;
+		};
+		F5EF8AC61BF0A0B60005D5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PiCalculatorObjcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiCalculatorObjc.app/PiCalculatorObjc";
+			};
+			name = Release;
+		};
+		F5EF8AC81BF0A0B60005D5B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PiCalculatorObjcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PiCalculatorObjc;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F5EF8AC91BF0A0B60005D5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PiCalculatorObjcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PiCalculatorObjc;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5EF8A8C1BF0A0B50005D5B2 /* Build configuration list for PBXProject "PiCalculatorObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EF8ABF1BF0A0B60005D5B2 /* Debug */,
+				F5EF8AC01BF0A0B60005D5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EF8AC11BF0A0B60005D5B2 /* Build configuration list for PBXNativeTarget "PiCalculatorObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EF8AC21BF0A0B60005D5B2 /* Debug */,
+				F5EF8AC31BF0A0B60005D5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EF8AC41BF0A0B60005D5B2 /* Build configuration list for PBXNativeTarget "PiCalculatorObjcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EF8AC51BF0A0B60005D5B2 /* Debug */,
+				F5EF8AC61BF0A0B60005D5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EF8AC71BF0A0B60005D5B2 /* Build configuration list for PBXNativeTarget "PiCalculatorObjcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EF8AC81BF0A0B60005D5B2 /* Debug */,
+				F5EF8AC91BF0A0B60005D5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5EF8AA01BF0A0B50005D5B2 /* PiCalculatorObjc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5EF8AA11BF0A0B50005D5B2 /* PiCalculatorObjc.xcdatamodel */,
+			);
+			currentVersion = F5EF8AA11BF0A0B50005D5B2 /* PiCalculatorObjc.xcdatamodel */;
+			path = PiCalculatorObjc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5EF8A891BF0A0B50005D5B2 /* Project object */;
+}
