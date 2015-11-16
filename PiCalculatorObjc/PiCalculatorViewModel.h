@@ -10,17 +10,44 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "ElapsedTimerService.h"
 
+#ifndef PiCalculatorViewModel_h
+#define PiCalculatorViewModel_h
+
+//status enum
+typedef enum: NSInteger{
+    CalculatorStatusInit = 1,
+    CalculatorStatusRunning = 2,
+    CalculatorStatusPaused = 3,
+    CalculatorStatusResumed = 4
+}CalculatorStatus;
+
+#endif
+
 @interface PiCalculatorViewModel : NSObject  <ElapsedTimerServiceDelegate>{
     
     //MARK: properties
     
     ElapsedTimerService *elapsedTimerService;
+    
+    CalculatorStatus currentStatus;
 }
 
 #pragma mark: public properties
 
 @property (strong, nonatomic) NSString *Pi;
 @property (strong, nonatomic) NSString *elapsedTime;
+
+@property (strong, nonatomic) NSString *titleOnStartStopButton;
+@property (strong, nonatomic) UIColor *titleColorOnStartStopButton;
+@property BOOL startStopButtonEnabled;
+
+@property (strong, nonatomic) NSString *titleOnPauseResumeButton;
+@property (strong, nonatomic) UIColor *titleColorOnPauseResumeButton;
+@property BOOL pauseResumeButtonEnabled;
+
+@property (nonatomic, strong) RACCommand *startStopCommand;
+@property (nonatomic, strong) RACCommand *pauseResumeCommand;
+
 
 #pragma mark: public methods
 

@@ -26,12 +26,6 @@
 //init method
 - (instancetype)initWithViewModel:(PiCalculatorViewModel *)viewModel;
 
-//Start/Stop Button method
-- (IBAction)startStopButton:(UIButton *)sender;
-
-//Pause/Resume method
-- (IBAction)pauseResumeButton:(UIButton *)sender;
-
 
 @end
 

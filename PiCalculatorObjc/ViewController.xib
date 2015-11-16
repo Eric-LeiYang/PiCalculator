@@ -78,16 +78,10 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYb-8z-wpZ">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                     <state key="normal" title="Start"/>
-                    <connections>
-                        <action selector="startStopButton:" destination="-1" eventType="touchUpInside" id="2bS-86-dkg"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z13-kZ-vMI">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                     <state key="normal" title="Pause"/>
-                    <connections>
-                        <action selector="pauseResumeButton:" destination="-1" eventType="touchUpInside" id="IF6-sR-nYX"/>
-                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -118,20 +112,20 @@
                     <exclude reference="z13-kZ-vMI"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="3i6-0Y-Pcb"/>
-                    <exclude reference="yL9-nY-PcI"/>
-                    <exclude reference="7Gv-bJ-2wX"/>
-                    <exclude reference="fz7-sn-wHn"/>
-                    <exclude reference="2vG-Hk-4X2"/>
-                    <exclude reference="y5L-sg-Clc"/>
-                    <exclude reference="o5X-7i-c3l"/>
-                    <exclude reference="rh5-oK-Oee"/>
-                    <exclude reference="81g-oP-6Pl"/>
-                    <exclude reference="geR-ce-yID"/>
                     <exclude reference="Op7-pr-Sb0"/>
                     <exclude reference="aPH-a2-aLX"/>
                     <exclude reference="BVI-ew-DZs"/>
                     <exclude reference="XMd-oi-zy5"/>
+                    <exclude reference="2vG-Hk-4X2"/>
+                    <exclude reference="y5L-sg-Clc"/>
+                    <exclude reference="7Gv-bJ-2wX"/>
+                    <exclude reference="fz7-sn-wHn"/>
+                    <exclude reference="81g-oP-6Pl"/>
+                    <exclude reference="geR-ce-yID"/>
+                    <exclude reference="3i6-0Y-Pcb"/>
+                    <exclude reference="yL9-nY-PcI"/>
+                    <exclude reference="o5X-7i-c3l"/>
+                    <exclude reference="rh5-oK-Oee"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -145,20 +139,20 @@
                     <include reference="z13-kZ-vMI"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="3i6-0Y-Pcb"/>
-                    <include reference="yL9-nY-PcI"/>
-                    <include reference="7Gv-bJ-2wX"/>
-                    <include reference="fz7-sn-wHn"/>
-                    <include reference="2vG-Hk-4X2"/>
-                    <include reference="y5L-sg-Clc"/>
-                    <include reference="o5X-7i-c3l"/>
-                    <include reference="rh5-oK-Oee"/>
-                    <include reference="81g-oP-6Pl"/>
-                    <include reference="geR-ce-yID"/>
                     <include reference="Op7-pr-Sb0"/>
                     <include reference="aPH-a2-aLX"/>
                     <include reference="BVI-ew-DZs"/>
                     <include reference="XMd-oi-zy5"/>
+                    <include reference="2vG-Hk-4X2"/>
+                    <include reference="y5L-sg-Clc"/>
+                    <include reference="7Gv-bJ-2wX"/>
+                    <include reference="fz7-sn-wHn"/>
+                    <include reference="81g-oP-6Pl"/>
+                    <include reference="geR-ce-yID"/>
+                    <include reference="3i6-0Y-Pcb"/>
+                    <include reference="yL9-nY-PcI"/>
+                    <include reference="o5X-7i-c3l"/>
+                    <include reference="rh5-oK-Oee"/>
                 </mask>
             </variation>
         </view>
