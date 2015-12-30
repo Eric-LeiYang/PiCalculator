@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4BC670E7F09CB37D6AFA065 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DBCD6D4AC8097F22A671F1 /* libPods.a */; };
+		F560C9341C349D25003A219D /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F560C9331C349D25003A219D /* libReactiveCocoa.a */; };
 		F5AFAB341BFC1971003980A1 /* testCAse.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AFAB331BFC1971003980A1 /* testCAse.m */; };
 		F5EF8A961BF0A0B50005D5B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8A951BF0A0B50005D5B2 /* main.m */; };
 		F5EF8A991BF0A0B50005D5B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8A981BF0A0B50005D5B2 /* AppDelegate.m */; };
@@ -45,6 +46,7 @@
 		70DBCD6D4AC8097F22A671F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE36A5D015D01C999B16605 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F5422C280F9347AD52FB9D66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F560C9331C349D25003A219D /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/libReactiveCocoa.a"; sourceTree = "<group>"; };
 		F5AFAB331BFC1971003980A1 /* testCAse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testCAse.m; sourceTree = "<group>"; };
 		F5EF8A911BF0A0B50005D5B2 /* PiCalculatorObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiCalculatorObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EF8A951BF0A0B50005D5B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F560C9341C349D25003A219D /* libReactiveCocoa.a in Frameworks */,
 				A4BC670E7F09CB37D6AFA065 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +114,7 @@
 		EFFF963C2B17D1278115245B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F560C9331C349D25003A219D /* libReactiveCocoa.a */,
 				70DBCD6D4AC8097F22A671F1 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -550,6 +554,10 @@
 				INFOPLIST_FILE = PiCalculatorObjc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d4c8066b-de72-43e9-8a80-bdd4c6f57fa8";
@@ -565,6 +573,10 @@
 				INFOPLIST_FILE = PiCalculatorObjc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d4c8066b-de72-43e9-8a80-bdd4c6f57fa8";
