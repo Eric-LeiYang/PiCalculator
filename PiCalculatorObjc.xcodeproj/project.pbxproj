@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4BC670E7F09CB37D6AFA065 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DBCD6D4AC8097F22A671F1 /* libPods.a */; };
+		F5AFAB341BFC1971003980A1 /* testCAse.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AFAB331BFC1971003980A1 /* testCAse.m */; };
 		F5EF8A961BF0A0B50005D5B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8A951BF0A0B50005D5B2 /* main.m */; };
 		F5EF8A991BF0A0B50005D5B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8A981BF0A0B50005D5B2 /* AppDelegate.m */; };
 		F5EF8A9C1BF0A0B50005D5B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8A9B1BF0A0B50005D5B2 /* ViewController.m */; };
@@ -44,6 +45,7 @@
 		70DBCD6D4AC8097F22A671F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE36A5D015D01C999B16605 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F5422C280F9347AD52FB9D66 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F5AFAB331BFC1971003980A1 /* testCAse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testCAse.m; sourceTree = "<group>"; };
 		F5EF8A911BF0A0B50005D5B2 /* PiCalculatorObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiCalculatorObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EF8A951BF0A0B50005D5B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5EF8A971BF0A0B50005D5B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		F5EF8AB01BF0A0B60005D5B2 /* PiCalculatorObjcTests */ = {
 			isa = PBXGroup;
 			children = (
+				F5AFAB331BFC1971003980A1 /* testCAse.m */,
 				F5EF8AB11BF0A0B60005D5B2 /* PiCalculatorObjcTests.m */,
 				F5EF8AB31BF0A0B60005D5B2 /* Info.plist */,
 			);
@@ -289,6 +292,7 @@
 				TargetAttributes = {
 					F5EF8A901BF0A0B50005D5B2 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = K6JWFQKU7Y;
 					};
 					F5EF8AAC1BF0A0B60005D5B2 = {
 						CreatedOnToolsVersion = 7.1;
@@ -416,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5EF8AB21BF0A0B60005D5B2 /* PiCalculatorObjcTests.m in Sources */,
+				F5AFAB341BFC1971003980A1 /* testCAse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,11 +546,13 @@
 			baseConfigurationReference = CDE36A5D015D01C999B16605 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: lei yang (R7LN2NAD6N)";
 				INFOPLIST_FILE = PiCalculatorObjc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d4c8066b-de72-43e9-8a80-bdd4c6f57fa8";
 			};
 			name = Debug;
 		};
@@ -554,11 +561,13 @@
 			baseConfigurationReference = F5422C280F9347AD52FB9D66 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: lei yang (R7LN2NAD6N)";
 				INFOPLIST_FILE = PiCalculatorObjc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d4c8066b-de72-43e9-8a80-bdd4c6f57fa8";
 			};
 			name = Release;
 		};

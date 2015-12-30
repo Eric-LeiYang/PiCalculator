@@ -36,11 +36,28 @@
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
+//    XCUIApplication *app = [[XCUIApplication alloc] init];
+//    
+//    [app.buttons[@"Start"] tap];
+//    [app.buttons[@"Pause"] tap];
+//    
     XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *startButton = app.buttons[@"Start"];
+    [startButton tap];
     
-    [app.buttons[@"Start"] tap];
-    [app.buttons[@"Pause"] tap];
-
+    XCUIElement *stopButton = app.buttons[@"Stop"];
+    [stopButton tap];
+    [startButton tap];
+    
+    XCUIElement *pauseButton = app.buttons[@"Pause"];
+    [pauseButton tap];
+    
+    XCUIElement *resumeButton = app.buttons[@"Resume"];
+    [resumeButton tap];
+    [pauseButton tap];
+    [resumeButton tap];
+    [stopButton tap];
+    
 }
 
 @end
