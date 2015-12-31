@@ -560,7 +560,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ffe2e253-6fbb-49ba-b97b-22e9352ab8ba";
+				PROVISIONING_PROFILE = "d6766abf-d764-4c4c-ae09-2dd8d857ccfe";
 			};
 			name = Debug;
 		};
@@ -579,7 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ffe2e253-6fbb-49ba-b97b-22e9352ab8ba";
+				PROVISIONING_PROFILE = "d6766abf-d764-4c4c-ae09-2dd8d857ccfe";
 			};
 			name = Release;
 		};
